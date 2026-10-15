@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-T+uVgDCZnwHWTKMbkLlNTEPefArLTBGgcMsPNUvT8Lg=' 'sha256-kkTvinlLfvIx8DkhM8IOKUXRkmEVROjnf7IOeKq/8A4=' 'sha256-iCn2nEI7NJjygRW/fz91GTxb0jqOOuMMHgLLV4HxAlo=' 'sha256-4ZweMg/IVnR/tZlSedtoQd5p3W4oGpPnQYdNr1JVmwE=' 'sha256-6KNSFLjrPHm8NW3irLJnEix+XdSw29mYwTAv+hFO/Vo='; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; frame-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-T+uVgDCZnwHWTKMbkLlNTEPefArLTBGgcMsPNUvT8Lg=' 'sha256-kkTvinlLfvIx8DkhM8IOKUXRkmEVROjnf7IOeKq/8A4=' 'sha256-iCn2nEI7NJjygRW/fz91GTxb0jqOOuMMHgLLV4HxAlo=' 'sha256-4ZweMg/IVnR/tZlSedtoQd5p3W4oGpPnQYdNr1JVmwE=' 'sha256-6yStCDmliSTpIq2XHMB76rMU/MP8+e1NKkQAXIu00uE='; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; frame-src 'none'">
 <link rel="canonical" href="https://maeumi-studio.pages.dev/">
 <meta name="description" content="이름·말투·대화 기억을 내 취향대로. GPT·Gemini 모델 선택부터 비용 계산, 설치 코드와 상세 사용법까지 한곳에서 준비하세요.">
 <meta name="robots" content="noindex">
@@ -374,7 +374,7 @@ small,.hint{font-size:13px;line-height:1.75;color:var(--muted)}.hint{margin-top:
 <p>본인 AI 대화 전체에는 약 12,000자 한도도 적용됩니다. 긴 질문·답변은 설정한 회수보다 적게 남을 수 있어요. 참고 개수만 줄이거나 기억 범위만 ‘현재 질문만’으로 바꾸는 것은 기존 기록 삭제와 다릅니다.</p>
 <h3>가볍게 · 기본 · 넉넉하게</h3><ul><li><strong>가볍게:</strong> AI 대화 1회 · 방 참고 4개 · 자기분석 추가 0개</li><li><strong>기본:</strong> AI 대화 3회 · 방 참고 8개 · 자기분석 추가 10개</li><li><strong>넉넉하게:</strong> AI 대화 6회 · 방 참고 최대 30개 · 자기분석 추가 최대 40개</li></ul><p>프리셋은 현재 보관 한도를 넘지 않도록 참고 개수를 맞춥니다. 예를 들어 보관이 20개·10개면 ‘넉넉하게’는 6회·20개·10개입니다. 기억 범위와 보관 한도 자체는 바꾸지 않습니다. 회색인 참고 항목은 현재 범위에서 사용하지 않으며, 값은 설정 JSON에 보관됩니다.</p>
 <div class="manual-note"><strong>기억을 늘리면 입력량도 늘 수 있어요.</strong><p>AI에 전송하는 참고 대화가 많으면 토큰 비용과 응답 시간이 늘 수 있습니다. 비용 계산기는 자동으로 바뀌지 않으므로 참고 대화와 시스템 지침을 포함한 입력 토큰을 예상해 조절하세요. 메시지 수만으로 정확한 토큰 수·금액을 정할 수는 없습니다.</p></div>
-<h3>요약과 사주 기억은 어떻게 되나요?</h3><p><code>!요약</code>·<code>!결론</code>은 방 대화 기억에서 기능을 켰을 때 사용합니다. 최근 10~80개를 요청할 수 있고 기본 요청은 40개이지만, 실제로 보관 중인 방 발언까지만 정리합니다. 저장 한도가 20개면 최대 20개가 대상이며, 이미 빠진 발언을 복구하지 않습니다.</p>
+<h3>요약과 사주 기억은 어떻게 되나요?</h3><p><code>!요약</code>·<code>!결론</code>은 방 대화 기억에서 기능을 켰을 때 사용합니다. 10개부터 보관 개수까지 요청할 수 있고(!요약 오늘 은 오늘 올라온 글 전부) 기본 요청은 40개이지만, 실제로 보관 중인 방 발언까지만 정리합니다. 저장 한도가 20개면 최대 20개가 대상이며, 이미 빠진 발언을 복구하지 않습니다.</p>
 <p>사주 기능과 본인 또는 방 대화 기억을 선택한 뒤 <strong>사주 명식을 본인별로 30분 기억</strong>을 직접 켜세요. 새 설정과 이 항목이 없는 이전 JSON은 꺼짐입니다. 현재 질문만으로 바꾸거나 사주 기능을 끄면 다시 꺼지며, 범위를 되돌려도 자동으로 켜지지 않습니다.</p>
 <ol class="manual-steps"><li><h4>첫 질문은 생년월일시와 함께</h4><p><code>!사주 양력 1996년 3월 1일 06시 10분 직업운</code>. 입력·계산을 통과하고 정상 사주 답변이 전송된 뒤에만 명식을 기억합니다.</p></li><li><h4>같은 방에서 본인이 이어 질문</h4><p><code>!사주 결혼운</code> 또는 설정한 호출어와 함께 <code data-bot-trigger-example=" 그럼 연애는?">마음아 그럼 연애는?</code>. 고유 방 ID와 사용자 해시가 있어야 연결합니다. 마지막 정상 사주 응답부터 30분이 지나면 생년월일부터 다시 입력하세요.</p></li><li><h4>본인 사주만 지우려면</h4><p><code>!사주 기억삭제</code>는 같은 방의 본인 임시 명식만 정리합니다. 재시작·재컴파일·방 AI 중지·초기화 때도 정리합니다. 잘못된 새 생년월일을 이전 명식으로 대신 풀이하지 않습니다.</p></li></ol>
 <div class="manual-note"><strong>사주 입력과 일반 대화 기록은 따로 처리해요.</strong><p>사주 입력으로 인식한 새 메시지는 일반 방 로그와 개인 AI 히스토리에 중복 보관하지 않습니다. 임시 명식은 상태 JSON에 저장하지 않지만, 질문·계산 자료는 해설을 만들기 위해 선택한 AI 제공사로 전송합니다. 카카오톡에 이미 보낸 메시지·수신 알림·중복 방지용 임시 자료·과거 버전의 저장 파일까지 지우는 설정은 아닙니다.</p></div>
@@ -1501,7 +1501,7 @@ openHelpTopic(location.hash,false);
    el.insertBefore(document.createTextNode('\n'), el.firstChild);
    el.appendChild(document.createTextNode('\n'));
   });
-  return '마음이 Studio 2.8.0 — 설치와 사용설명서\n설정한 봇: '+($('botName').value.trim()||'나의 봇')+'\n현재 호출어 예시: '+configuredTrigger()+'\n공식 자료 확인: 2026-10-02\n모든 기기 경로를 포함합니다. 본인 환경에 해당하는 절차를 따라 주세요.\n\n' + copy.textContent.replace(/[ \t]+\n/g, '\n').replace(/\n[ \t]+/g, '\n').replace(/\n{3,}/g, '\n\n').trim() + '\n';
+  return '마음이 Studio 2.9.17 — 설치와 사용설명서\n설정한 봇: '+($('botName').value.trim()||'나의 봇')+'\n현재 호출어 예시: '+configuredTrigger()+'\n공식 자료 확인: 2026-10-02\n모든 기기 경로를 포함합니다. 본인 환경에 해당하는 절차를 따라 주세요.\n\n' + copy.textContent.replace(/[ \t]+\n/g, '\n').replace(/\n[ \t]+/g, '\n').replace(/\n{3,}/g, '\n\n').trim() + '\n';
  }
  $('downloadManual').addEventListener('click', function () {
   saveFile('마음이_Studio_'+uiFilenamePart($('botName').value.trim()||'나의 봇')+'_사용설명서.txt', manualText());
