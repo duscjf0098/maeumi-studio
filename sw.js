@@ -2,7 +2,7 @@
 const ASSETS = ["index.html","pwa.js","manifest.webmanifest","icons/icon-192.png","icons/icon-512.png","icons/icon-180.png","icons/icon-32.png","icons/icon-maskable-512.png","icons/icon.svg","social/maeumi-studio-v1.png"];
 const APP_ROOT = new URL('./', self.location.href);
 const PREFIX = 'maeumi-studio-' + encodeURIComponent(APP_ROOT.pathname) + '-';
-const CACHE = PREFIX + 'e07de2da84fc287d';
+const CACHE = PREFIX + '0869c215d3eaa57f';
 const URLS = ASSETS.map(file => new URL(file, APP_ROOT).href);
 const INDEX = new URL('index.html', APP_ROOT).href;
 function cleanRedirect(response) {

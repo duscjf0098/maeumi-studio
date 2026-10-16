@@ -3,7 +3,7 @@
   Referrer-Policy: no-referrer
   X-Frame-Options: DENY
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
-  Content-Security-Policy: default-src 'none'; script-src 'self' 'sha256-T+uVgDCZnwHWTKMbkLlNTEPefArLTBGgcMsPNUvT8Lg=' 'sha256-kkTvinlLfvIx8DkhM8IOKUXRkmEVROjnf7IOeKq/8A4=' 'sha256-iCn2nEI7NJjygRW/fz91GTxb0jqOOuMMHgLLV4HxAlo=' 'sha256-4ZweMg/IVnR/tZlSedtoQd5p3W4oGpPnQYdNr1JVmwE=' 'sha256-6yStCDmliSTpIq2XHMB76rMU/MP8+e1NKkQAXIu00uE='; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; frame-src 'none'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'none'; script-src 'self' 'sha256-ekgqMNMo6gLpzBqSezcK6aWcN7/t8D3kD1UIsFR+TeE=' 'sha256-kkTvinlLfvIx8DkhM8IOKUXRkmEVROjnf7IOeKq/8A4=' 'sha256-iCn2nEI7NJjygRW/fz91GTxb0jqOOuMMHgLLV4HxAlo=' 'sha256-4ZweMg/IVnR/tZlSedtoQd5p3W4oGpPnQYdNr1JVmwE=' 'sha256-OPgpNxkJSMIw66XgnlF0BrTLy174W5mzFYqoEBN+E7Y='; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; frame-src 'none'; frame-ancestors 'none'
 /
   Cache-Control: no-cache
 /index.html
